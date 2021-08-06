@@ -9,12 +9,32 @@
 </div>
 
 <div class="grid">
+
     <div class="col-4">
-        <p-card header="Netas Netas"
+        <p-card header="Ventas Netas"
                 subheader="Do presente ano"
         >
         <i class="pi pi-dollar"></i>
-         {{ (ventasNetas + 100000) | number:'1.2-2'}}   
+         {{ (ventasNetas + 1000) | number:'1.2-2'}}   
         </p-card>
     </div>
+
+    <div class="col-4">
+        <p-card header="Ventas Brutas"
+                subheader="Do presente ano"
+        >
+         {{ (ventasNetas + 2000) | currency:'AOA':'symbol-narrow'}}   
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card header="Ganancia Porcentual"
+                subheader="Do presente ano"
+        >
+         {{ ( porcentaje ) | percent: '2.2-2'}}   
+        </p-card>
+    </div>
+    
+    
+
 </div>
