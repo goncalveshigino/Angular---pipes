@@ -37,3 +37,59 @@
   
 </div>
 
+
+<div class="text-layout">
+
+    <h1>Date | data | pipe</h1>
+    <p>
+        Pipe para mostar as datas
+    </p>
+</div>
+
+<div class="grid">
+
+    <div class="col-6">
+
+        <p-card>
+           <ul>
+             <li>Data de Hoje</li>
+             <li>Data de Hoje | date</li>
+             <li>Data de Hoje | date: 'short'</li>
+             <li>Data de Hoje | date: 'long'</li>
+             <li>Data de Hoje | date:'MMMM dd, yyyy'</li>
+           </ul>
+
+           <hr>
+
+
+           <ul>
+              <li>Data de Hoje| date:'long':'GMT-6'</li>
+              <li>Data de Hoje| date:'long':'GMT-4'</li>
+           </ul>
+        </p-card>
+
+    </div> 
+
+    <div class="col-6">
+
+        <p-card>
+          <ul>
+              <li>{{ data }}</li>
+               <li>{{ data | date }}</li>
+               <li>{{ data | date:'short' }}</li>
+               <li>{{ data | date:'long' }}</li>
+               <li>{{ data | date:'MMMM dd, yyyy' }}</li>
+          </ul>
+
+          <hr>
+
+          <ul>
+            <li>{{ data | date:'long':'GMT-6' }}</li>
+            <li>{{ data | date:'long':'GMT-4' }}</li>
+               <li>{{ data | date:'long':'':'fr' }}</li>
+          </ul>
+        </p-card>
+         
+    </div>
+
+</div>

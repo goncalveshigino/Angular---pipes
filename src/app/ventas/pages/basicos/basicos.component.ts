@@ -12,6 +12,9 @@ export class BasicosComponent  {
   nameUpper: string = 'HIGINO';
   name: string = 'GoncAlVes hIginO';
 
+
+  data: Date  = new Date();
+
   constructor() { }
 
 

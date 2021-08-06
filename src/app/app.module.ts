@@ -9,6 +9,12 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { VentasModule } from './ventas/ventas.module';
 
+import localpt from '@angular/common/locales/pt-AO';
+import localFr from '@angular/common/locales/fr';
+import { registerLocaleData } from '@angular/common'
+import { LOCALE_ID } from '@angular/core';
+registerLocaleData(localpt);
+registerLocaleData( localFr );
 
 
 @NgModule({
@@ -21,7 +27,9 @@ import { VentasModule } from './ventas/ventas.module';
     AppRouterModule,
     VentasModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt-AO' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
