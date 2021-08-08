@@ -7,6 +7,7 @@ import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { MaiusculasPipe } from './pipes/maiusculas.pipe';
+import { VuelaPipe } from './pipes/vuela.pipe';
 
 
 
@@ -16,7 +17,8 @@ import { MaiusculasPipe } from './pipes/maiusculas.pipe';
     NoCumunesComponent,
     BasicosComponent,
     OrdenarComponent,
-    MaiusculasPipe
+    MaiusculasPipe,
+    VuelaPipe
   ],
   exports: [
     NumerosComponent,
