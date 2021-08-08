@@ -42,4 +42,20 @@ export class NoCumunesComponent  {
     direccion: 'Ottawa, Canadá'
   }
 
+
+  //Json pipe
+  heroes = [
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'Superman',
+      vuela: false
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    }
+  ]
 }
