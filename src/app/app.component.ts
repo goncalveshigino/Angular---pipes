@@ -18,11 +18,7 @@ export class AppComponent implements  OnInit{
 
   name: string = 'Higino';
   value: number = 1000;
-
-  //Objecto
-  obj = {
-    name: 'Katiavala'
-  }
+  obj = { name: 'Katiavala'}
   
   showName() {
     console.log(this.name);

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-no-cumunes',
@@ -6,11 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NoCumunesComponent implements OnInit {
+export class NoCumunesComponent  {
 
-  constructor() { }
+  //i18nSelect
+  nome: string = 'Lídia';
+  genero: string = 'femenino';
+  invitacionMap = {
+    'masculino': 'invitarlo',
+    'femenino' : 'invitarla'
+  }
 
-  ngOnInit(): void {
+  //i18nPlural
+  clientes: string[] = ['Maria', 'Pedro', 'Juan', 'Katiavala'];
+  clientesMapa = {
+    '=0': 'no tenemos ningún cliente esperando.',
+    '=1': 'Tenemos 1 cliente esperando',
+    'other':  'tenemos # clientes esperando '
+  }
+
+
+  cambiarCliente() {
+    this.nome = 'Gonza';
+    this.genero = 'masculino';
+  }
+
+  borrarCliente() {
+    this.clientes.pop();
   }
 
 }

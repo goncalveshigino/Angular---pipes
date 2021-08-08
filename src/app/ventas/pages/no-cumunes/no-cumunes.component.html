@@ -8,17 +8,47 @@
 </div>
 
 
+
  <div class="grid">
 
     <div class="col md-6">
        <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
-             Content
+            
+        <p> Saludo {{ nome }}, es un placer {{genero | i18nSelect: invitacionMap }} a nuestro envento.</p>
+         
+         <button 
+              (click)="cambiarCliente()" 
+              pButton  
+              label="  Cambiar persona" 
+              class="p-button-help"></button>
+
        </p-fieldset>
     </div>
 
     <div class="col md-6">
        <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-            Content
+          
+        <p>Actualmente  {{ clientes.length | i18nPlural: clientesMapa }}</p>
+
+        <button 
+               pButton 
+               label="Borrar cliente" 
+               (click)="borrarCliente()"
+               class="p-button-danger"></button>
+       
+       </p-fieldset>
+    </div>
+
+
+     <div class="col md-6">
+       <p-fieldset legend="Slice Pipe" [toggleable]="true">
+          
+        <b>Original</b>
+        <pre>{{ clientes }}</pre>
+
+        <b>slice:0:3</b>
+        <pre>{{ clientes | slice:0:3 }}</pre>
+       
        </p-fieldset>
     </div>
 
