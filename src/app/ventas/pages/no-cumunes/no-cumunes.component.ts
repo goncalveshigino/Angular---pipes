@@ -34,4 +34,12 @@ export class NoCumunesComponent  {
     this.clientes.pop();
   }
 
+
+  //KeyValuePipe
+  persona = {
+    nombre: 'Higino',
+    edad: 24,
+    direccion: 'Ottawa, Canadá'
+  }
+
 }
