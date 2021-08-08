@@ -78,6 +78,18 @@
     </div>
 
 
+
+     <div class="col p-md-6">
+       <p-fieldset legend="Async Pipe" [toggleable]="true">
+          
+       <pre>{{ MiObservable | async }}</pre>
+       <pre *ngIf="!(valorPromesa | async )">Resolvendo Promesa</pre>
+       <pre>{{ valorPromesa | async}}</pre>
+
+       </p-fieldset>
+    </div>
+
+
      
 
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-cumunes',
@@ -58,4 +59,17 @@ export class NoCumunesComponent  {
       vuela: false
     }
   ]
+
+
+  //Async Pipe
+  MiObservable = interval(1000);
+
+  valorPromesa = new Promise((resolve, reject) => {
+     
+    setTimeout(() => {
+      resolve('Tenemos data de promesa');
+    }, 3500);
+    
+
+  });
 }
