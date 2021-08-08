@@ -8,7 +8,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { MaiusculasPipe } from './pipes/maiusculas.pipe';
 import { VuelaPipe } from './pipes/vuela.pipe';
-import { OrdenatPipe } from './pipes/ordenat.pipe';
+import { OrdenatPipe } from './pipes/ordenar.pipe';
 
 
 
